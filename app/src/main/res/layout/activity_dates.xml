@@ -1,0 +1,106 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/boisko2"
+    android:fillViewport="false">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.example.satu.obiektysportowe.DatesActivity"
+    android:visibility="visible"
+    android:gravity="center_vertical|center_horizontal">
+
+    <TextView
+        android:text="Podaj interesujące Cię datę i godziny:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_test"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:textStyle="bold" />
+
+    <Button
+        style="@style/MessengerButtonText"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="Sprawdź dostępność"
+        android:id="@+id/button_sprawdzTermin"
+        android:background="@drawable/pilka1"
+        android:layout_below="@+id/textView_komunikat"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datePicker"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:background="@android:drawable/screen_background_light_transparent">
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberPickerHourFrom"
+            android:orientation="vertical"/>
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberPickerMinFrom"
+            android:orientation="vertical" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberPickerHourTo"
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberPickerMinTo"
+            android:orientation="vertical">
+
+        </NumberPicker>
+
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_komunikat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/linearLayout"
+        android:textColor="#ffff421f"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@android:drawable/screen_background_light_transparent" />
+
+    <DatePicker
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:spinnersShown="true"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:layout_below="@+id/textView_test"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+
+    </ScrollView>

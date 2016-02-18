@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Obiekty Sportowe</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="action_create_fb_event">Stworz wydarzenie</string>
+    <string name="action_login">Zaloguj</string>
+    <string name="action_search">Szukaj</string>
+    <string name="title_activity_search_objects">Znajdź obiekt</string>
+    <string name="title_activity_object_details">Szczegóły obiektu</string>
+    <string name="title_activity_dates">Sprawdź dostępność</string>
+    <string name="title_activity_view_reservations">Przegladaj Rezerwacje</string>
+    <string name="title_activity_reservation_to_confirm">Potwierdzenie rezerwacji</string>
+    <string name="parse_app_id">laMmY9lV9xDBuuSRzttwCSb6Lbl4PQUoXXzNpP58</string>
+    <string name="parse_client_key">hUvmlepgvsO5mCIRAtIheVHIS39IwhO7S7eAfPGv</string>
+    <string name="facebook_app_id">907325099329840</string>
+    <string name="action_logout">Wyloguj</string>
+    <string name="title_activity_geo">GeoActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_reservation_details">Szczegóły rezerwacji</string>
+</resources>
